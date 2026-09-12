@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class threenumbers {
+     public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter Three Numbers : ");
+
+        int firstNumber = scanner.nextInt();
+        int secondNumber = scanner.nextInt();
+        int thirdNumber = scanner.nextInt();
+
+        if (firstNumber >= secondNumber && firstNumber >= thirdNumber)
+            System.out.println("First Number is Largest");
+        else if (secondNumber >= firstNumber && secondNumber >= thirdNumber)
+            System.out.println("Second Number is Largest");
+        else
+            System.out.println("Third Number is Largest");
+
+        scanner.close();
+    }
+}
